@@ -1,0 +1,33 @@
+{
+  "manifest-version": 1,
+
+  "name": "bbc-box-quiz-app",
+  "version": "0.1.0",
+
+  "description": "Databox quiz application that will collect data from the user as part of the bbc-box prototype",
+  "author": "mattclaffey",
+  "license": "MIT",
+
+	"databox-type":"app",
+
+  "tags": [
+    "app",
+    "quiz"
+  ],
+
+  "homepage": "https://github.com/bbc/bbc-box-quiz-app/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbc/bbc-box-quiz-app.git"
+  },
+
+  "datasources":[],
+
+  "resource-requirements": {
+    "store":"core-store"
+  },
+
+  "providedDataTypes": [
+    {"type": "BBCQuiz:awnsers"}
+  ]
+}
