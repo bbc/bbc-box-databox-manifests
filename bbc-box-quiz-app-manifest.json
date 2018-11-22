@@ -58,5 +58,13 @@
 
   "providedDataTypes": [
     {"type": "BBCQuiz:answers"}
-  ]
+  ],
+
+  "export-whitelist": [
+		{
+		  "url": "http://34.248.113.3/recommend",
+		  "description": "Exports profile to BBC recommender"
+		}
+	]
+
 }
