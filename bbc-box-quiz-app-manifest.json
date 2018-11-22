@@ -21,7 +21,36 @@
     "url": "git+https://github.com/bbc/bbc-box-quiz-app.git"
   },
 
-  "datasources":[],
+  "datasources": [
+		{
+			"type": "spotify::playlistData",
+			"required": true,
+			"name": "spotify::playlist",
+			"clientid": "spotify::playlist",
+			"granularities": []
+    },
+    {
+			"type": "spotify::topArtists",
+			"required": true,
+			"name": "spotify::topArtists",
+			"clientid": "spotify::playlist",
+			"granularities": []
+    },
+    {
+			"type": "instagram::photoData",
+			"required": true,
+			"name": "instagram photo metadata",
+			"clientid": "photoData",
+			"granularities": []
+    },
+    {
+			"type": "bbc::iplayer::recommendations",
+			"required": true,
+			"name": "BBC iPlayer recommendations",
+			"clientid": "iplayer::recommendations",
+			"granularities": []
+    }
+  ],
 
   "resource-requirements": {
     "store":"core-store"
