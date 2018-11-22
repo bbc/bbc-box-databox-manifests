@@ -25,15 +25,15 @@
 		{
 			"type": "spotify::playlistData",
 			"required": true,
-			"name": "spotify::playlist",
-			"clientid": "spotify::playlist",
+			"name": "spotify playlist data",
+			"clientid": "spotifyPlaylist",
 			"granularities": []
     },
     {
 			"type": "spotify::topArtists",
 			"required": true,
-			"name": "spotify::topArtists",
-			"clientid": "spotify::playlist",
+			"name": "spotify top artists list",
+			"clientid": "spotifyArtists",
 			"granularities": []
     },
     {
@@ -47,7 +47,7 @@
 			"type": "bbc::iplayer::recommendations",
 			"required": true,
 			"name": "BBC iPlayer recommendations",
-			"clientid": "iplayer::recommendations",
+			"clientid": "iplayerRecommendations",
 			"granularities": []
     }
   ],
@@ -57,6 +57,6 @@
   },
 
   "providedDataTypes": [
-    {"type": "BBCQuiz:awnsers"}
+    {"type": "BBCQuiz:answers"}
   ]
 }
