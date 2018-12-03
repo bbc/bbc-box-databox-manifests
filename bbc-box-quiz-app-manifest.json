@@ -30,10 +30,10 @@
 			"granularities": []
     },
     {
-			"type": "spotify::topArtists",
+			"type": "spotify::playlistData",
 			"required": true,
-			"name": "spotify top artists list",
-			"clientid": "spotifyArtists",
+			"name": "spotify playlist list",
+			"clientid": "spotifyPlaylistData",
 			"granularities": []
     },
     {
@@ -58,13 +58,5 @@
 
   "providedDataTypes": [
     {"type": "BBCQuiz:answers"}
-  ],
-
-  "export-whitelist": [
-		{
-		  "url": "http://34.248.113.3/recommend",
-		  "description": "Exports profile to BBC recommender"
-		}
-	]
-
+  ]
 }
