@@ -1,0 +1,64 @@
+{
+  "manifest-version": 1,
+
+  "name": "bbc-box-quiz-app-dev",
+  "version": "0.1.0",
+  "docker-image":"bbc-box-quiz-app-dev",
+  "docker-registry":"bbcbox",
+  "docker-image-tag":"dev",
+  "description": "Databox quiz application that will collect data from the user as part of the bbc-box prototype",
+  "author": "mattclaffey",
+  "license": "MIT",
+
+	"databox-type":"app",
+
+  "tags": [
+    "app",
+    "quiz"
+  ],
+
+  "homepage": "https://github.com/bbc/bbc-box-quiz-app/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbc/bbc-box-quiz-app.git"
+  },
+
+  "datasources": [
+		{
+			"type": "spotify::playlistData",
+			"required": true,
+			"name": "spotify playlist data",
+			"clientid": "spotifyPlaylist",
+			"granularities": []
+    },
+    {
+			"type": "spotify::topArtists",
+			"required": true,
+			"name": "spotify top artists list",
+			"clientid": "spotifyArtists",
+			"granularities": []
+    },
+    {
+			"type": "instagram::photoData",
+			"required": true,
+			"name": "instagram photo metadata",
+			"clientid": "photoData",
+			"granularities": []
+    },
+    {
+			"type": "bbc::iplayer::recommendations",
+			"required": true,
+			"name": "BBC iPlayer recommendations",
+			"clientid": "iplayerRecommendations",
+			"granularities": []
+    }
+  ],
+
+  "resource-requirements": {
+    "store":"core-store"
+  },
+
+  "providedDataTypes": [
+    {"type": "BBCQuiz:answers"}
+  ]
+}
