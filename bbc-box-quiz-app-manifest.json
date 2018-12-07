@@ -58,5 +58,13 @@
 
   "providedDataTypes": [
     {"type": "BBCQuiz:answers"}
+  ],
+
+  "export-whitelist": [
+		{
+		  "url": "https://www.bboxservices.net/recommender",
+		  "description": "Exports profile to BBC recommender"
+		}
   ]
+
 }
