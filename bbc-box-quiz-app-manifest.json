@@ -64,6 +64,10 @@
 		{
 		  "url": "https://www.bboxservices.net/recommender",
 		  "description": "Exports profile to BBC recommender"
+    },
+    {
+		  "url": "https://127.0.0.1:5000/colours",
+		  "description": "Exports data to bbcbox leds"
 		}
   ]
 
