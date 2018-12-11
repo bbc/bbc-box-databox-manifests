@@ -49,6 +49,13 @@
 			"name": "BBC iPlayer recommendations",
 			"clientid": "iplayerRecommendations",
 			"granularities": []
+    },
+    {
+			"type": "bbcbox::setleds",
+			"required": true,
+			"name": "BBC box led actuator",
+			"clientid": "setleds",
+			"granularities": []
     }
   ],
 
@@ -64,19 +71,7 @@
 		{
 		  "url": "https://www.bboxservices.net/recommender",
 		  "description": "Exports profile to BBC recommender"
-    },
-    {
-		  "url": "http://192.168.1.101:5000/colours",
-		  "description": "Exports data to bbcbox leds"
-    },
-    {
-		  "url": "http://192.168.1.102:5000/colours",
-		  "description": "Exports data to bbcbox leds"
-    },
-    {
-		  "url": "http://192.168.1.103:5000/colours",
-		  "description": "Exports data to bbcbox leds"
-		}
+    }
   ]
 
 }

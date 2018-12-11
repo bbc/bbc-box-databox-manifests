@@ -1,0 +1,35 @@
+{
+	"manifest-version": 1,
+
+	"name": "bbc-box-led-driver",
+	"databox-type": "driver",
+	"version": "0.3.0",
+
+	"description": "A driver for bbc box leds.",
+	"author": "Tosh Brown <Anthony.Brown@nottingham.ac.uk>",
+	"license": "MIT",
+	"tags": [
+		"leds",
+		"gloang"
+	],
+
+	"homepage": "https://github.com/me-box/bbc-box-led-driver",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/me-box/bbc-box-led-driver"
+	},
+
+
+	"resource-requirements": {
+		"store": "core-store"
+	},
+
+	"provides": [
+		{
+			"data-source-type": "bbcbox::setleds",
+			"description": "set bbc box leds",
+			"store-type": "kv",
+			"schema": {}
+		}
+	]
+}
