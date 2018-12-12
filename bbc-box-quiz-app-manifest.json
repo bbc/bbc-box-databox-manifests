@@ -56,6 +56,13 @@
 			"name": "BBC box led actuator",
 			"clientid": "setleds",
 			"granularities": []
+    },
+    {
+			"type": "bbcbox::recommenderExport",
+			"required": true,
+			"name": "BBC box Recommender Export",
+			"clientid": "export",
+			"granularities": []
     }
   ],
 
@@ -69,7 +76,7 @@
 
   "export-whitelist": [
 		{
-		  "url": "https://www.bboxservices.net/recommender",
+		  "url": "https://www.bboxservices.net/recommender/recommend",
 		  "description": "Exports profile to BBC recommender"
     }
   ]

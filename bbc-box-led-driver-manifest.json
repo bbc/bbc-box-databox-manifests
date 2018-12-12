@@ -28,7 +28,13 @@
 		{
 			"data-source-type": "bbcbox::setleds",
 			"description": "set bbc box leds",
-			"store-type": "kv",
+			"store-type": "tsblob",
+			"schema": {}
+		},
+		{
+			"data-source-type": "bbcbox::recommenderExport",
+			"description": "Export data to recommender",
+			"store-type": "tsblob",
 			"schema": {}
 		}
 	]
