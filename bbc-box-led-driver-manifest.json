@@ -24,6 +24,15 @@
 		"store": "core-store"
 	},
 
+	"external-whitelist": [
+		{
+			"urls": [
+				"https://www.bboxservices.net/recommender/recommend"
+			],
+			"description": "Used to export data to the bbc recommender"
+		}
+	],
+
 	"provides": [
 		{
 			"data-source-type": "bbcbox::setleds",
